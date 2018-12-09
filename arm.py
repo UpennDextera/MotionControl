@@ -6,8 +6,8 @@ class Arm:
     def __init__(self):
         self.vertical = MotorDOF(17, 11)
         self.wrist_rotate = ServoDOF(19)
-        #self.wrist_tilt = ServoDOF()
-        #self.gripper_A = MotorDOF()
+        self.wrist_tilt = ServoDOF(26)
+        self.gripper_A = MotorDOF(22, 10)
         #self.gripper_B = MotorDOF()
 
     def set_dofs(self, dof_positions):
